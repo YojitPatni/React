@@ -16,7 +16,11 @@ function App() {
   }
 
   const removeValue=()=>{
+    if(counter===0){
+      button.disabled=true;
+    }
     setCounter(counter-1);
+    
   }
 
   return (
